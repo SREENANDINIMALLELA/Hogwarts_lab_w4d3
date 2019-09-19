@@ -13,6 +13,8 @@ get '/hogwarts' do
 end
 post '/hogwarts'do
 @student = Student.new(params)
+p params
+p @student
 @student.save()
 erb(:create)
 
